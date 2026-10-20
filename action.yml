@@ -1,0 +1,19 @@
+name: 'Hello Custom Action'
+description: 'Greets a person and records the time'
+author: 'Mustafa Bangash'
+
+inputs:
+  who-to-greet:
+    description: 'Name of the person to greet'
+    required: true
+    default: 'World'
+
+outputs:
+  greeting:
+    description: 'The greeting message'
+  time:
+    description: 'The time the greeting was generated'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
